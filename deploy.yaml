@@ -6,7 +6,7 @@ metadata:
   labels:
     app: snk
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: snk
@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: snk
-        image: nginx:1.7.9
+        image: nginx
         ports:
         - containerPort: 80
